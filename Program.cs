@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Basic Core Programming");
             Console.WriteLine("Enter select an option to procced :");
-            Console.WriteLine("\n1. Flip Coin \n2. Check Leap year \n3. Nth Harmonic value \n4. Table of Power of 2 "); 
+            Console.WriteLine("\n1. Flip Coin \n2. Check Leap year \n3. Nth Harmonic value \n4. Table of Power of 2 \n5. Find Prime Factors"); 
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -26,6 +26,10 @@
                 case 4:
                     PowerOf2 powerOf2 = new PowerOf2();
                     powerOf2.TableOfTwo();
+                    break;
+                case 5:
+                    PrimeFactorization primeFactorization = new PrimeFactorization();
+                    primeFactorization.FindPrimeFactorization();
                     break;
                 default:
                     Console.WriteLine("Please enter a valid option");
