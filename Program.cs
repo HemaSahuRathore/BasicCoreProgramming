@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Basic Core Programming");
             Console.WriteLine("Enter select an option to procced :");
-            Console.WriteLine("\n1. Flip Coin \n2. Check Leap year \n3. Nth Harmonic value \n4. Table of Power of 2 \n5. Find Prime Factors \n6. Compute Quotient and Remainder \n7. Swap two numbers \n8. Check Even or Odd number"); 
+            Console.WriteLine("\n1. Flip Coin \n2. Check Leap year \n3. Nth Harmonic value \n4. Table of Power of 2 \n5. Find Prime Factors \n6. Compute Quotient and Remainder \n7. Swap two numbers \n8. Check Even or Odd number\n9. Check alphabet is Vowel or Consonant"); 
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -42,6 +42,10 @@
                 case 8:
                     EvenOrOdd evenOrOdd = new EvenOrOdd();
                     evenOrOdd.CheckEven0rOdd();
+                    break;
+                case 9:
+                    VowelOrConsonants vowelOrConsonants = new VowelOrConsonants();
+                    vowelOrConsonants.CheckVorC();
                     break;
                 default:
                     Console.WriteLine("Please enter a valid option");
